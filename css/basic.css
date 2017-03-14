@@ -27,6 +27,11 @@ font-weight: 300;
     max-height: 250px;
 }
 
+.mobile-nav {
+    margin-top: 50px;
+    display: block;
+}
+
 .hash {
     color: #33c3f0;
 
@@ -49,36 +54,41 @@ font-weight: 300;
 }
 
 /** Screens larger than 750px **/
+
+@media (min-width: 550px) {
+    .about-image {
+        margin-top: 8rem;
+        display: block;
+    }
+}
+
 @media (min-width: 750px) {
     .menu {
         visibility: visible;
     }
+    
+    .mobile-nav {
+        display: none;
+    }
 
     .about-image {
-        margin-top: 30%;
+        margin-top: 12rem;
         display: block;
     }
     
     .landing {
     margin-top: 25%;
-    padding-bottom: 22rem;
+    padding-bottom: 12rem;
 }
 }
 
 @media (min-width: 1000px) {
     .about-image {
-        margin-top: 25%;
+        margin-top: 12rem;
         display: block;
     }
     
     .message-button {
-        display: block;
-    }
-}
-
-@media (min-width: 550px) {
-    .about-image {
-        margin-top: 50%;
         display: block;
     }
 }
