@@ -1,20 +1,18 @@
-/*
-@font-face {
-font-family: 'Raleway';
-src: url("../fonts/Raleway-Thin.ttf");
-font-weight: 300;
-}
-*/
-
 @font-face {
     font-family: 'Raleway';
-    src: url("../fonts/Raleway-Light.ttf");
+    src: url("../fonts/MontserratAlternates-Regular.ttf");
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Raleway';
-    src: url("../fonts/Raleway-Medium.ttf");
+    src: url("../fonts/MontserratAlternates-Light.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/MontserratAlternates-SemiBold.ttf");
     font-weight: 600;
 }
 
@@ -42,22 +40,28 @@ font-weight: 300;
 }
 
 .about-image {
-    display: none;
+    max-height: 200px;
+    margin-top: 10rem;
 }
 
 .message-button {
     display: none;
+    margin-left: 16px;
 }
 
 .alt-section {
     background-color: #f1f1f1;
 }
 
+.grid-item img {
+    padding: 3rem;
+}
+
 /** Screens larger than 750px **/
 
 @media (min-width: 550px) {
     .about-image {
-        margin-top: 8rem;
+        margin-top: 10rem;
         display: block;
     }
 }
@@ -66,28 +70,38 @@ font-weight: 300;
     .menu {
         visibility: visible;
     }
-    
+
     .mobile-nav {
         display: none;
     }
 
     .about-image {
-        margin-top: 12rem;
-        display: block;
+        margin-top: 14rem;
+        max-height: 250px;
+    }
+
+    .landing {
+        margin-top: 25%;
+        padding-bottom: 12rem;
     }
     
-    .landing {
-    margin-top: 25%;
-    padding-bottom: 12rem;
-}
+    .grid-item {
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-top: 6rem;
+    }
+    
+    .grid-item img {
+        padding: 4rem;
+    }
 }
 
 @media (min-width: 1000px) {
     .about-image {
-        margin-top: 12rem;
+        margin-top: 22rem;
         display: block;
     }
-    
+
     .message-button {
         display: block;
     }
@@ -95,7 +109,7 @@ font-weight: 300;
 
 /* Navigation */
 nav {
-    border-bottom: solid 1px #e3e3e3;
+    border-bottom: solid 1px #eee;
     position: fixed;
     top: 0;
     width: 100%;
@@ -107,6 +121,10 @@ nav {
 
 /** Footer */
 footer {
+    margin-top: 5rem;
+}
+
+.footer-main {
     border-top: solid 1px #e3e3e3;
     padding-top: 16px;
     z-index: 1000;
@@ -147,4 +165,32 @@ footer {
     font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.landing-container {
+    background-color: #33C3F0;
+}
+
+.prefooter {
+    background-color: #273443;
+    padding-top: 16px;
+}
+
+.prefooter ul {
+    list-style: none;
+}
+
+.prefooter a {
+    text-decoration: none;
+    color: white;
+}
+
+.prefooter li {
+    line-height: normal;
+}
+
+.prefooter-header {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
 }
